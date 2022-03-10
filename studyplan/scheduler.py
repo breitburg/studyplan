@@ -1,15 +1,13 @@
 from random import randint
 from threading import local
-from time import sleep
 from maya import MayaDT
 from typing import List
 from ics.event import Event
-from math import ceil
 from progress.bar import IncrementalBar
 
 
 def schedule(tasks: List[str], begin: MayaDT, finish: MayaDT,
-             per_day: int, count: int, plaid: bool = False) -> List[Event]:
+             per_day: int, count: int) -> List[Event]:
     delta_days = finish.subtract_date(dt=begin).days
     local_tasks = []
     events = []

@@ -27,8 +27,6 @@ def main() -> None:
     parser.add_argument('-o', '--output', type=str,
                         default='plan.ics',
                         help='output file path')
-    parser.add_argument('--plaid', action='store_true',
-                        help='disable delays')
 
     args = parser.parse_args()
     calendar = Calendar()
@@ -39,7 +37,6 @@ def main() -> None:
         finish=when(args.finish),
         per_day=args.per_day,
         count=args.count,
-        plaid=args.plaid,
     )
 
     open(file=args.output, mode='w').writelines(calendar)
