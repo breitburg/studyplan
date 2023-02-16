@@ -40,4 +40,4 @@ def main() -> None:
     )
 
     open(file=args.output, mode='w').writelines(calendar)
-    print('👓 Your studying plan was saved at {}'.format(args.output))
+    print('👓 Your study plan was saved at {}'.format(args.output))

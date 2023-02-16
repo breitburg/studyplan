@@ -1,12 +1,12 @@
 # studyplan
 
-A tiny utility that schedules your exams preparation routines. You only need to specify the tasks and the deadline. App will output a iCal file, that you can than import to your calendar application or website.
+This app will help you plan and schedule your exam preparation routines. You just need to specify the tasks and the deadline. The app will output an iCal file, which you can then import into your calendar app or website.
 
 ```console
-$ studyplan --finish "in 3 month" --output "English Exam.ics" --tasks "essey" "describe a picture" "write a letter" "compare two pictures"
+$ studyplan --finish "in 2 month" --output "IELTS.ics" --tasks "speaking" "listening" "reading" "writing"
 ```
 
-![](https://i.imgur.com/QojYhoy.png)
+![Example of the Generated Plan](https://user-images.githubusercontent.com/25728414/219512527-7be91cc1-7e69-4a6b-9224-96f40c7ae730.png)
 
 ## Installation
 
